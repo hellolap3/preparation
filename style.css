@@ -3,6 +3,14 @@ margin: 0;
 padding: 0;
 }
 
+body {
+  font-family: 'Shippori Mincho', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 #top {
   display: none;
 }
@@ -34,9 +42,17 @@ header ul li {
   font-size: 27px;
 }
 
+.menubar {
+  display: none;
+}
+
 .container {
   max-width: 750px;
   margin: 0 auto;
+}
+
+.menu-block {
+  display: none;
 }
 
 #top-wrapper {
@@ -81,4 +97,110 @@ footer {
 /* artwork.html */
 #artwork-top img {
   width: 750px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  header {
+    padding-top: 0px;
+  }
+
+  header h1 {
+    line-height: 60px;
+  }
+
+
+  .menu-block {
+    display: block;
+    position: absolute;
+    top: -360px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    z-index: 20202020;
+    transition: 1s;
+  }
+
+  .menu-open {
+    top: 0px;
+    transition: 1s;
+  }
+
+  .menu-block li {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid white;
+  }
+
+  .menu-block ul a {
+    display: block;
+    background-color: black;
+    opacity: 45%;
+    color: white;
+  }
+
+  .close-btn {
+    background-color: black;
+    opacity: 45%;
+    color: white;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+  }
+
+  .menu-block ul a:hover {
+    opacity: 0.3;
+    transition: 1s;
+  }
+
+  .menu-bar {
+    height: 36px;
+    text-align: center;
+    width: 100%;
+    background-color: #dcdcdc;
+  }
+
+  .menubar {
+    width: 27px;
+    color: white;
+    display:inline-block;
+    padding-top: 3px;
+  }
+
+  section {
+    margin-top: 20px;
+  }
+
+  #top-wrapper {
+    height: 500px;
+  }
+
+  #top-wrapper img {
+    width: 100%;
+  }
+
+  .slide {
+    height: 400px;
+  }
+  /* artwork */
+
+  #artwork-top img {
+    width: 100%;
+  }
+
+  .dn {
+    display: none;
+  }
+
+
 }

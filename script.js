@@ -19,3 +19,14 @@ setTimeout(function() {
    $imgi.addClass('active');}
  }, 3 * 1000);
 }, 3000);
+
+$('.close-btn').click(function() {
+        $('.menu-block').removeClass('menu-open');
+				$('.menubar').removeClass('dn');
+
+});
+
+$('.menu-bar').click(function() {
+        $('.menu-block').addClass('menu-open');
+				$('.menubar').addClass('dn');
+});
