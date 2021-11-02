@@ -1,0 +1,84 @@
+body,h1,h2,h3,section,div,ul,li {
+margin: 0;
+padding: 0;
+}
+
+#top {
+  display: none;
+}
+
+header {
+  height: 75px;
+  padding: 30px 0 30px 0;
+}
+
+header h1 {
+  color: red;
+  font-size: 33px;
+  float: left;
+  line-height: 75px;
+}
+
+header ul {
+  float: right;
+  padding-right: 30px;
+  line-height: 75px;
+}
+
+header ul li {
+  float: left;
+  color: blue;
+  text-decoration: none;
+  list-style: none;
+  padding-right: 27px;
+  font-size: 27px;
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+#top-wrapper {
+  text-align: center;
+  padding-bottom: 30px;
+  height: 800px;
+}
+
+
+.slide {
+position: relative; /* 親要素にrelativeを指定 */
+height: 600px;
+}
+
+.slide img {
+width: 750px;
+position: absolute; /* absoluteで画像を重ねる */
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+}
+
+.img {
+  opacity: 0;
+  transition: 3s;
+}
+
+.active {
+  opacity: 1;
+  transition: 3s;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  padding: 30px;
+}
+
+
+/* artwork.html */
+#artwork-top img {
+  width: 750px;
+}
